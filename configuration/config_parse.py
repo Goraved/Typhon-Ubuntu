@@ -8,8 +8,9 @@ global_config.read_file(open(f'{os.path.dirname(os.path.abspath(__file__))}/glob
 
 # Environment settings
 OS_NAME = platform.system()
-OS_VERSION = platform.version()
 OS_ARCHITECTURE = platform.architecture()
+OS_PLATFORM = platform.platform()
+PYTHON_VERSION = platform.python_version()
 PROJECT = global_config.get('ENVIRONMENT', 'project')
 LINK_TYPE_TEST_CASE = global_config.get('ENVIRONMENT', 'link_type_test_case')
 LINK_TYPE_LINK = global_config.get('ENVIRONMENT', 'link_type_link')

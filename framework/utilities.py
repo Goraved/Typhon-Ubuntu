@@ -1,7 +1,7 @@
 import gevent as gevent
 
 from base_definitions import os, ROOT_DIR
-from configuration.config_parse import GITHUB, OS_NAME, OS_ARCHITECTURE, OS_VERSION
+from configuration.config_parse import GITHUB, OS_NAME, OS_ARCHITECTURE, OS_PLATFORM, PYTHON_VERSION
 
 
 class Utilities:
@@ -23,4 +23,5 @@ class Utilities:
         f.write(f"Git {GITHUB}\n")
         f.write(f"OS_NAME {OS_NAME}\n")
         f.write(f"OS_ARCHITECTURE {OS_ARCHITECTURE}\n")
-        f.write(f"OS_VERSION {OS_VERSION}\n")
+        f.write(f"OS_PLATFORM {OS_PLATFORM}\n")
+        f.write(f"Python {PYTHON_VERSION}\n")
