@@ -1,0 +1,12 @@
+# IDEA
+.DS_Store
+.idea/
+
+# Local reports
+allure-results/
+allure-report/
+
+# Python
+venv/
+.pytest_cache
+__pycache__
